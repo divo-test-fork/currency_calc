@@ -1,0 +1,28 @@
+<form #f="ngForm" novalidate>
+
+    <pre>{{ userCurrency | json }}</pre>
+
+    <div>
+        <label>Amount</label>
+        <input type="number" name="amount" [(ngModel)]="userCurrency.amount" (ngModelChange)="get(userCurrency)">
+    </div>
+    <div>
+        <label>Source currency</label>
+        <select name="sourceCurrency" [(ngModel)]="userCurrency.sourceCurrency" (ngModelChange)="get(userCurrency)">
+            <option *ngFor="let c of currencies" [ngValue]="c">
+                {{c.name}}
+            </option>
+        </select>
+    </div>
+    <div>
+        <label>Target currency</label>
+        <select name="targetCurrency" [(ngModel)]="userCurrency.targetCurrency" (ngModelChange)="get(userCurrency)">
+            <option *ngFor="let c of currencies" [ngValue]="c">
+                {{c.name}}
+            </option>
+        </select>
+    </div>
+    <div>
+        <div>{{ currencyAmount }}</div>
+    </div>
+</form>
