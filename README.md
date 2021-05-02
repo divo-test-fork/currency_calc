@@ -1,6 +1,6 @@
 # Currency calculator
 
-This is some simple application which server for user some service that allow calculate some currencies.
+This is some simple application which server for user service that allow calculate some currencies.
 
 ## Application is build from two parts:  
 - Backend - is build in spring technology
