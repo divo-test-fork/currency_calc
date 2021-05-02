@@ -19,5 +19,5 @@ $: npm install
 $: npm start
 ```
 
-If you want some special configuration (different port or host) u should change url to backend in:
+If you want some special configuration (different port or host) you should change url to backend in:
 app/shared/currency.service.ts
